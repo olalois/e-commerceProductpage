@@ -9,7 +9,7 @@ const Home = () => {
 
   const handleAdd = () => setQuantity(quantity + 1);
   const handleSubtract = () => {
-    if (quantity > 1) setQuantity(quantity - 1);
+    if (quantity > 0) setQuantity(quantity - 1);
   };
 
   const handleAddToCart = () => {
@@ -59,7 +59,7 @@ const Home = () => {
           <div className="flex items-center gap-0">
             <button
               onClick={handleSubtract}
-              className="md:px-3 px-10 py-1 bg-gray-300 text-orange-500 rounded text-lg font-bold"
+              className="md:px-3 px-10 py-1 bg-gray-300 text-orange-500 rounded text-lg font-bold cursor-pointer"
             >
               −
             </button>
@@ -70,7 +70,7 @@ const Home = () => {
 
             <button
               onClick={handleAdd}
-              className="md:px-3 px-10 py-1 bg-gray-300 text-orange-500 rounded text-lg font-bold"
+              className="md:px-3 px-10 py-1 bg-gray-300 text-orange-500 rounded text-lg font-bold cursor-pointer"
             >
               +
             </button>
@@ -78,7 +78,7 @@ const Home = () => {
 
           <button
             onClick={handleAddToCart}
-            className="flex items-center gap-2 bg-orange-600 text-white md:px-6 py-2 px-20 rounded-md hover:bg-orange-700"
+            className="flex items-center gap-2 bg-orange-600 text-white md:px-6 py-2 px-20 rounded-md hover:bg-orange-700 cursor-pointer shadow-lg"
           >
             <i className="fa-solid fa-cart-shopping"></i>
             Add to Cart

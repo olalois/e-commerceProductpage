@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useCart } from "../context/CartContext";
-
+import avatar from "../assets/images/avatar.png";
 const Navbar = () => {
   const { cartCount } = useCart();
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +53,7 @@ const Navbar = () => {
             )}
           </Link>
           <img
-            src="src/assets/images/avatar.png"
+            src= {avatar}
             alt="avatar"
             className="w-10 h-10 rounded-full"
           />

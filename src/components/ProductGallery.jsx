@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 const ProductGallery = () => {
   const images = [
-    "src/assets/images/image-product-1.jpg",
-    "src/assets/images/image-product-2.jpg",
-    "src/assets/images/image-product-3.jpg",
-    "src/assets/images/image-product-4.jpg",
+    "public/images/image-product-1.jpg",
+    "public/images/image-product-2.jpg",
+    "public/images/image-product-3.jpg",
+    "public/images/image-product-4.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
